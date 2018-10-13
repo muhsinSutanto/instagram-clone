@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Instagram</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/style.css">
@@ -18,9 +18,12 @@
                         <img src="images/instagram_logo2.png" alt="logo"/>
                         <p> Buat akun untuk melihat foto  <br> 
                             dan video dari teman Anda.</p>
-                        <input type="text" value="Masuk dengan facebook">
-                        <div>
-                            <p>__________</p> <p>ATAU</p><p>__________</p>
+                        <button>
+                            <span class="fbButton"></span>
+                            Masuk dengan facebook
+                        </button>
+                        <div class="atau">
+                            <div></div> <span>ATAU</span> <div></div>
                         </div>
                         <form>
                             <input type="text" placeholder="Nomor Ponsel atau Email">
@@ -31,7 +34,13 @@
 
                         </form>
                         <input type="submit" value="Daftar">
-
+                        <div class="agreement">
+                            Dengan mendaftar, Anda menyetujui 
+                            <a href="#">Ketentuan</a>, 
+                            <a href="#">Kebijakan Data</a>, 
+                            dan 
+                            <a href="#">Kebijakan Cookie</a> kami.
+                        </div>
                     </div>
                     <div></div>
                     <div></div>
@@ -53,5 +62,26 @@
             <div>coba rubah cobaa</div>
             <div>tidak berguna</div>
         </footer>
+
+        <script>
+            // Ganti Warna Border Input Form Jadi Abu-Abu Saat di Klik
+            var boxInput = document.querySelectorAll('.desc input[type="text"]');
+
+            boxInput.forEach( (i) => {
+                i.addEventListener('focus', borderInput);
+                i.addEventListener('blur', removeBorderInput);
+                }
+            );
+
+            function borderInput () {
+                this.style.border = '1px solid #b2b2b2';
+                this.style.outline = 'none';
+            };
+
+            function removeBorderInput () {
+                this.style.border = '1px solid #efefef';
+            };
+
+        </script>
     </body>
 </html>

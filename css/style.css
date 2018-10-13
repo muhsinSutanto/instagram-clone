@@ -16,15 +16,111 @@ body {
 
 .desc {
     display: grid;
-    grid-template-rows: 6% 70% 12% 12%;
+    grid-template: 6% 70% 12% 12% / 1fr;
 }
 
 .desc-1 {
     background-color: #fff;
-    width: auto;
+    max-width: 350px;
     height: auto;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    font-family: Helvetica, sans-serif;
 }
 
-img {
+.desc-1 img {
     width: 50%;
+    margin: 10% 25% 1%;
+}
+
+.desc-1 p {
+    margin: 2% 0 3% 5%;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #999;
+    text-align: center;
+}
+.desc-1 button, .desc-1 input[type="submit"] {
+    background : #3897f0;
+    border: 1px solid #3897f0;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 9px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    width: 76%;
+    margin-left: 14%;
+    margin-top: 2%;
+    outline: 0;
+}
+
+.desc-1 button:active, .desc-1 input[type="submit"]:active {
+    background : #5dabf5;
+    border: 1px solid #5dabf5;
+}
+
+.fbButton {
+    background: url(https://www.instagram.com/static/bundles/base/sprite_core.png/fa9f36710aa4.png);
+    background-repeat: no-repeat;
+    background-position: -347px -407px;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    margin-right: 1%;
+}
+
+.atau {
+    display: flex;
+    margin: 10px 40px 18px;
+}
+
+.atau div {
+    height: 1px;
+    background: #efefef;
+    width: 100%;
+    margin: auto 0;
+}
+
+.atau span {
+    margin: 0 10px;
+    color: #999;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.desc input[type="text"] {
+    background: #fafafa;
+    width: 70%;
+    margin: 5px 15%;
+    line-height: 18px;
+    padding: 9px 0 7px 8px;
+    border: 1px solid #efefef;
+    border-radius: 3px;
+    color: #999;
+}
+
+.desc input[type="text"]::placeholder {
+    font: 400 12px 'Arial';
+    color: #999;
+}
+
+.borderInput {
+    border : 1px solid #b2b2b2;
+}
+
+.agreement {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 5% 15% 10%;
+}
+
+.agreement a {
+    color: #999;
+    font-weight: 600;
+    text-decoration: none;
 }
