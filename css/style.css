@@ -152,3 +152,7 @@ body {
     align-content: flex-start;
     flex-direction : row; 
  }
+
+.left-footer-container a {
+    color: #3897f0
+}
